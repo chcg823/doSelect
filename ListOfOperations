@@ -1,0 +1,29 @@
+import java.util.*;
+
+class ArrayListOps {
+
+	public ArrayList<Integer> makeArrayListInt(int n) {
+		ArrayList<Integer> list = new ArrayList<Integer>(Collections.nCopies(n, 0));
+		return list;
+	}
+
+	public ArrayList<Integer> reverseList(ArrayList<Integer> list) {
+		ArrayList<Integer> revList = new ArrayList<Integer>(list);
+		Collections.reverse(revList);
+		return revList;
+	}
+
+	public ArrayList<Integer> changeList(ArrayList<Integer> list, int m, int n) {
+		list.stream().forEach( number -> {
+			if(number==m)
+				list.set(list.indexOf(number), n);
+		});
+		return list;
+	}
+
+}
+
+public class ListOfOperations{
+	public static void main(String[] args) {
+	}
+}
