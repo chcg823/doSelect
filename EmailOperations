@@ -53,8 +53,3 @@ class GenerateReceipt{
     return Integer.toString(sum);
   }
 }
-class EmailOperations{
-  public static void main(String[] args){
-    
-  }
-}
