@@ -23,7 +23,3 @@ class ArrayListOps {
 
 }
 
-public class ListOfOperations{
-	public static void main(String[] args) {
-	}
-}
