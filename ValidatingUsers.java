@@ -53,8 +53,4 @@ class GenerateReceipt{
     return Integer.toString(sum);
   }
 }
-class ValidatingUsers{
-  public static void main(String[] args){
-    
-  }
-}
+
