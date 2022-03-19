@@ -43,9 +43,3 @@ class NotEligibleException extends Exception {
 		super(message);
 	}
 }
-
-class InvalidAgeException extends Exception {
-	public InvalidAgeException(String message) {
-		super(message); 
-	}
-}
