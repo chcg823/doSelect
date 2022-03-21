@@ -11,7 +11,7 @@ class CompanyJobRepository {
 
 	public static String getJobPrediction(int age, String highestQualification) throws NotEligibleException{	
 		if(age<19)
-				throw new NotEligibleException("You are underage for any job");
+			throw new NotEligibleException("You are underage for any job");
 		else {
 			if(!qualification.contains(highestQualification))
 					throw new NotEligibleException("We do not have any job that matches your qualifications");
