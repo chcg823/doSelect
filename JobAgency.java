@@ -14,7 +14,7 @@ class CompanyJobRepository {
 			throw new NotEligibleException("You are underage for any job");
 		else {
 			if(!qualification.contains(highestQualification))
-					throw new NotEligibleException("We do not have any job that matches your qualifications");
+				throw new NotEligibleException("We do not have any job that matches your qualifications");
 			else if(age>=21 && highestQualification.equals("B.E"))
 				return "We have openings for junior developer";
 			else if(age>=26 && !highestQualification.equals("B.E"))
